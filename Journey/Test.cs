@@ -1,5 +1,6 @@
 using System.Reflection.Metadata.Ecma335;
 
+using Sorter = SortingLibrary.Sorter;
 namespace Tests
 {
 	[TestClass]
@@ -39,6 +40,44 @@ namespace Tests
 		{
 			bool temp = Greater(10, 10);
 			Assert.AreEqual(temp, false);
+		}
+		
+		//bubble sort tests
+		int[] numbers = { 4, 5, 2, 3, 1 };
+
+		[TestMethod]
+		public void BubbleTest1()
+		{
+			Sorter.BubbleSort(numbers);
+			Assert.AreEqual(numbers[0], 1);
+		}
+
+		[TestMethod]
+		public void BubbleTest2()
+		{
+			Sorter.BubbleSort(numbers);
+			Assert.AreEqual(numbers[1], 2);
+		}
+
+		[TestMethod]
+		public void BubbleTest3()
+		{
+			Sorter.BubbleSort(numbers);
+			Assert.AreEqual(numbers[2], 3);
+		}
+
+		[TestMethod]
+		public void BubbleTest4()
+		{
+			Sorter.BubbleSort(numbers);
+			Assert.AreEqual(numbers[3], 4);
+		}
+
+		[TestMethod]
+		public void BubbleTest5()
+		{
+			Sorter.BubbleSort(numbers);
+			Assert.AreEqual(numbers[4], 5);
 		}
 	}
 }
