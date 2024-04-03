@@ -41,7 +41,7 @@ namespace SortingLibrary
 						int og = numbers[selected];
 						numbers[selected] = numbers[o];
 						numbers[o] = og;
-						o++;
+						o--;
 
 					}
 				}
