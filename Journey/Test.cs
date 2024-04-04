@@ -188,5 +188,13 @@ namespace Tests
 			Sorter.InsertionSort(newn);
 			Assert.AreEqual(newn[0], -1);
 		}
+
+		int[] sizeOne = { 5 };
+		[TestMethod]
+		public void OneTest()
+		{
+			Sorter.InsertionSort(sizeOne);
+			Assert.AreEqual(sizeOne.Length, 0);
+		}
 	}
 }

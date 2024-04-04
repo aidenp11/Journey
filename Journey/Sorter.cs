@@ -28,6 +28,7 @@ namespace SortingLibrary
 			} while (moved > 0);
 		}
 
+		// BIG O = n^2 as well, this is because it is, again, a loop within a loop
 		public static void SelectionSort(int[] numbers)
 		{
 			for (int i = 0; i < numbers.Length; i++)
@@ -48,6 +49,8 @@ namespace SortingLibrary
 			}
 		}
 
+		// BIG O = n^2, this is because this sort iterates through two loops, a loop in a loop, if you will, so the bigger the array 
+		// the longer and longer this method goes on
 		public static void InsertionSort(int[] numbers)
 		{
 			for (int i = 1; i < numbers.Length; i++)
